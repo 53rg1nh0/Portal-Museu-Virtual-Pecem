@@ -100,4 +100,4 @@ setTimeout(() => {
             next(ativo);
         }
     });
-}, 150)
+}, 250)
