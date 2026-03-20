@@ -1,0 +1,5 @@
+@media screen and (max-width:666px) {
+    .page-cp--f-container {
+        padding: 0 var(--padding-gap);
+    }
+}

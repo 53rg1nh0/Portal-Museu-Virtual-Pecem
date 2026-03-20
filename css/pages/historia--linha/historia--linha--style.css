@@ -1,0 +1,180 @@
+.conteudo{
+    background-image: url('../../../assets/images/pages/historia--propagandas/Nova\ ponte\ de\ enbarque\ Ceará\ imagem\ de\ fundo.png');
+}
+
+/* .page-h-l-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    
+} */
+
+
+
+.linha-tempo {
+    max-width: 950px;
+    height: 520px;
+    box-shadow: 0 0 10px black;
+    border-radius: 30px;
+    padding: 50px;
+    padding-top: 100px;
+    position: relative;
+    background-color: #2d9a9e85;
+    position: relative;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap:20px;
+}
+
+.seta {
+    text-align: center;
+    height: 100px;
+    width: 40px;
+    background-color: #EBB94B;
+    position: absolute;
+    z-index: 1;
+    top:40px;
+    font-size: 3rem;
+    padding-top: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.avanca{
+    right: 0;
+}
+
+.volta{
+    left:0;
+}
+
+.avanca:hover, .volta:hover{
+    text-shadow: 0 0 10px black;
+}
+
+.linha {
+    width: 97%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: black;
+    padding-bottom: 4px;
+}
+
+.anos {
+    display: flex;
+    position: absolute;
+    /* left: var(--inicio); */
+    top: 38px;
+
+    transition: 1s;
+}
+
+.ano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.ano:hover p {
+    text-shadow: 0 0 10px black;
+}
+
+.ano:hover .dot {
+    box-shadow: 0 0 10px black;
+}
+
+.ano p {
+    font-weight: bold;
+    letter-spacing: .3ch;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.ativo p {
+    scale: 1.5;
+    color: #EBB94B;
+
+    /* text-shadow: 0 0 15px black; */
+    text-shadow: 2px 2px 0 black;
+}
+
+.ativo .dot {
+    box-shadow: 0 0 15px black;
+    background-color: #EBB94B;
+    outline: 4px solid black;
+}
+
+.section{
+    overflow: hidden;
+    /* position: relative; */
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.artigo{
+    /* position: absolute; */
+    display: flex;
+    gap: 1rem;
+    height: 0;
+    width: 0;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    /* width: 100%; */
+    opacity: 0;
+    scale: 0.2;
+    transition: scale 1s;
+    /* overflow: hidden; */
+}
+
+.visivel{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    scale: 1;
+}
+
+.img{
+    width: 65%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.texto{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40%;
+}
+
+.texto h2{
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    /* text-shadow: 15px 5px 3px rgba(0, 0, 0, 0.753); */
+    text-shadow: 2px 2px 0px black;
+    color:  #EBB94B;;
+}

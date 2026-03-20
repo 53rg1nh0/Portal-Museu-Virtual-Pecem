@@ -1,0 +1,56 @@
+@media screen and (max-width:666px) {
+    .noticia {
+        float: initial;
+        width: 100%;
+        margin: 0;
+    }
+
+    .jornal {
+        flex-direction: column;
+    }
+
+    .jornal div:first-child,
+    .jornal div:last-child {
+        width: 100%;
+    }
+
+    .jornal img {
+        width: 100%;
+    }
+
+    .jornal-cearence-libertador,
+    .jornais {
+        flex-direction: column;
+    }
+
+    .jornal-cearence-libertador div:first-child img {
+        width: 100%;
+    }
+
+    .jornal-cearence-libertador div:first-child p {
+        width: 100%;
+    }
+
+    .jornais div:last-child img,
+    .jornais div:last-child p {
+        width: 100%;
+    }
+
+    .foto-maps-praia-1994{
+        float: none;
+        width: 100%;
+    }
+
+    .foto-maps-praia-1994 img, .foto-maps-praia-1994 p{
+        width: 100%;
+    }
+
+    .foto-maps-praia-2011{
+        float: none;
+        margin: 0;
+    }
+
+    .foto-maps-praia-2011 img{
+        width: 100%;
+    }
+}

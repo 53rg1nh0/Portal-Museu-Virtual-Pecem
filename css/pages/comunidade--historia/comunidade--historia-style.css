@@ -1,0 +1,44 @@
+.conteudo {
+    background-image: url('../../../assets/images/pages/comunidade--fotos/imgm2005_.jpg');
+}
+
+.bkg-cor{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.page-comunidade--historia-container h2{
+    margin-top: 5ch;
+}
+
+.page-comunidade--historia-container .titulo1{
+    margin-top:0;
+}
+
+.page-comunidade--historia-container p{
+    text-align: justify;
+}
+
+.page-comunidade--historia-container img{
+    box-shadow: 0 0 10px black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-gap);
+    /* padding: var(--padding-gap) 0; */
+}
+
+.capela{
+    float:left;
+    margin-right: var(--padding-gap);
+    margin-bottom: var(--padding-gap);
+    width: 30%;
+}
+
+.documento{
+    float: right;
+    margin-left: var(--padding-gap);
+    margin-bottom: var(--padding-gap);
+    width: 40%;
+}

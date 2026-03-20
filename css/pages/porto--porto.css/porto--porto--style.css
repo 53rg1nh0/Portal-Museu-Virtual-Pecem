@@ -1,0 +1,124 @@
+.conteudo{
+    background-image: url('../../../assets/images/pages/index/carousel-foto2.jpg');
+    background-position: top right;
+}
+
+.bkg-cor{
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.page-p--p-container p {
+    margin: var(--padding-gap) 0;
+    text-align: justify;
+}
+
+.page-p--p-container p:first-child {
+    margin: calc(2 * var(--padding-gap)) 0;
+}
+
+.page-p--p-container img {
+    box-shadow: 0 0 10px black;
+}
+
+.noticia {
+    float: right;
+    margin-left: var(--padding-gap);
+    width: 290px;
+    margin-top:-5ch;
+}
+
+.noticia p{
+    margin-bottom: calc(.1 * var(--padding-gap));
+}
+
+.noticia img {
+    width: 100%;
+}
+
+.mapa {
+    width: 100%;
+}
+
+.jornal {
+    display: flex;
+    gap: var(--padding-gap)
+}
+
+.jornal div:first-child {
+    width: 49.5%;
+}
+
+.jornal div:last-child {
+    width: 50.5%;
+}
+
+.jornal img {
+    width: 100%;
+}
+
+.descricao-topografica {
+    width: 100%;
+}
+
+.almanaque {
+    width: 100%;
+}
+
+.jornal-cearence-libertador, .jornais {
+    display: flex;
+    gap: var(--padding-gap);
+}
+
+.jornal-cearence-libertador div:last-child img {
+    width: 100%;
+}
+
+.jornal-cearence-libertador div:first-child img {
+    width: 64%;
+}
+
+.jornal-cearence-libertador div:first-child p {
+    width: 64%;
+}
+
+.jornais div:first-child img{
+    width: 100%;
+}
+
+.jornais div:last-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.jornais div:last-child img, .jornais div:last-child p{
+    width: 79.5%;
+    margin-left: auto;
+}
+
+.foto-praia{
+    width: 100%;
+}
+
+.foto-maps-praia-1994{
+    float: left;
+    margin-right: var(--padding-gap);
+}
+
+.foto-maps-praia-1994 p{
+    width: 50ch;
+}
+
+.foto-maps-praia-2011{
+    float: right;
+    margin-left: var(--padding-gap);
+}
+
+.fotos-drone{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-gap);
+}
+
+.fotos-drone img{
+    width: 100%;
+}

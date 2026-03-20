@@ -1,0 +1,26 @@
+@media screen and (max-width:1070px) {
+    .linha-tempo{
+        height:fit-content;
+    }
+
+    .section{
+        height: fit-content;
+    }
+
+    .visivel{
+        width: fit-content;
+    }
+    
+    .artigo {
+        flex-direction: column;
+        /* height: fit-content; */
+    }
+
+    .img{
+        width: 100%;
+    }
+
+    .texto{
+        width: 100%;
+    }
+}

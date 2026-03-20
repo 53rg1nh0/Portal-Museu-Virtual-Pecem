@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import 'porto--trajetoria--style.css';
+@import 'porto--trajetoria--media-desktop.css';
+@import 'porto--trajetoria--media-tablet.css';
+@import 'porto--trajetoria--media-smartphone.css'

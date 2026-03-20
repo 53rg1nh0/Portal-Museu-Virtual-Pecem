@@ -1,0 +1,517 @@
+@import 'https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap';
+
+:root {
+    --primary-color: #2D9A9E;
+    --secudary-color: #EBB94B;
+    --primary-font: "Open Sans", sans-serif;
+    --secundary-font: "Bitter", serif;
+    --background-citacao: #DFE2E4;
+    --cor-sobre: #333333;
+    --cor-rodape: #606060;
+    --cor-menu: #2d9a9e42;
+    --scala: 1;
+    --desktop-width: 1200px;
+    --padding-gap: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: .1rem;
+    line-height: 1.7rem;
+}
+
+a,
+p,
+li {
+    letter-spacing: .07rem;
+    line-height: 1.7rem;
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.baner {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+.baner-navio {
+    background-image: url(../../assets/images/global/ship.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 13rem;
+}
+
+.baner-navio h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 20ch;
+    padding: 1rem 0;
+    color: white;
+}
+
+.navegacao {
+    border-bottom: 4px solid var(--secudary-color);
+
+    display: flex;
+    z-index: 2;
+}
+
+.navegacao-top {
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-pecem {
+    width: 10rem;
+    height: 2.4rem;
+    background-image: url(../../assets/images/global/logo-pecem.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.menu {
+    display: flex;
+    background-color: var(--cor-menu);
+}
+
+.item,
+.subitem {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item:hover,
+.subitem:hover {
+    color: var(--secudary-color);
+}
+
+.submenu {
+    background-color: rgba(255, 255, 255, 0.712);
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.citacao {
+    background-color: var(--background-citacao);
+    padding: 1.3rem 2.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citacao strong {
+    color: var(--primary-color);
+    font-family: var(--secundary-font);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 72ch;
+}
+
+.citacao::before,
+.citacao::after {
+    content: '"';
+    position: relative;
+    top: -20px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.footer {
+    height: fit-content;
+}
+
+.contato {
+    background-color: var(--cor-sobre);
+    display: flex;
+}
+
+.contato h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--secudary-color);
+}
+
+.contato p,
+.contato a {
+    font-size: .9rem;
+    color: white;
+}
+
+.sobre {
+    max-width: 50ch;
+}
+
+.logos {
+    width: 315px * var(--scala);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc(1.5rem * var(--scala));
+}
+
+.logo-cipp {
+    background-image: url(../../assets/images/global/logo-pecem-branco.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: calc(315px * var(--scala));
+    height: calc(70px * var(--scala));
+}
+
+.roterdam-governo {
+    width: 315px * var(--scala);
+
+    display: flex;
+    gap: calc(1.5rem * var(--scala));
+    justify-content: space-between;
+}
+
+.logo-roterdam,
+.logo-governo-ceara {
+    width: calc(9rem * var(--scala));
+    height: calc(3rem * var(--scala));
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+}
+
+.logo-roterdam {
+    background-image: url(../../assets/images/global/logo-roterdam.svg);
+}
+
+.logo-governo-ceara {
+    background-image: url(../../assets/images/global/logo-governo-ceara.svg);
+}
+
+.copyright {
+    background-color: var(--cor-rodape);
+    color: white;
+    font-size: .7rem;
+}
+
+.copyright p {
+    line-height: 1rem;
+}
+
+.contato-copyrigth--inside {
+    font-weight: 100;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: var(--padding-gap);
+    padding: var(--padding-gap);
+}
+
+/* conteudo */
+.title,
+.subtitle {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    padding: 1.8rem 0;
+}
+
+.title {
+    color: var(--secudary-color);
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 black;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    padding: 0;
+    padding: 1.3rem 0;
+    letter-spacing: .08rem;
+}
+
+.img-fundo {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    height: 320px;
+}
+
+.paragrafe {
+    padding: var(--padding-gap) 0;
+    letter-spacing: .06rem;
+}
+
+.list {
+    list-style: inside;
+}
+
+.conteudo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bkg-cor{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: var(--padding-gap) 0;
+}
+
+.linha-cronologica {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: var(--padding-gap);
+    padding-left: var(--padding-gap);
+    max-width: calc(100ch + 90px + 2 * var(--padding-gap));
+    margin: auto;
+}
+
+.linha-cronologica::before {
+    content: "";
+    width: 6px;
+    transform: translateX(2px);
+    height: 100%;
+    background-color: black;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+}
+
+.ponto-linha-cronologica {
+    display: flex;
+    justify-content: center;
+}
+
+.ponto-linha-cronologica:first-child::before,
+.ponto-linha-cronologica:last-child::before {
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    border-radius: 50%;
+    transform: translateX(-12px);
+}
+
+.ponto-linha-cronologica:first-child::before {
+    top: 0;
+}
+
+.ponto-linha-cronologica:last-child::before {
+    bottom: 0;
+}
+
+.data {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    border: 4px solid black;
+    margin-top: -8px;
+}
+
+.evento {
+    padding: var(--padding-gap);
+    max-width: 60ch;
+}
+
+.foto-evento {
+    display: block;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    cursor: pointer;
+    transition: 1.5s;
+    scale: 0.8;
+    box-shadow: 0 0 10px black;
+}
+
+.foto-evento:hover {
+    scale: 1;
+    box-shadow: 0 0 20px black;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.container {
+    margin: 0 var(--padding-gap);
+}
+
+.fotos {
+    padding-bottom: var(--padding-gap);
+    display: flex;
+    gap: var(--padding-gap);
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+
+.foto {
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 0 10px black;
+}
+
+.foto:hover img {
+    scale: 1.5;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+    max-width: 1200px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    left: -70px;
+}
+
+.next {
+    right: -60px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+.numbertext {
+    color: white;
+    text-shadow: 0 0 3px black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: var(--padding-gap);
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    padding: 0;
+}
+
+#caption {
+    padding: var(--padding-gap);
+    width: 100%;
+}

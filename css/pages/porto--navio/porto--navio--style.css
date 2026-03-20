@@ -1,0 +1,155 @@
+.conteudo {
+    background-image: url('../../../assets/images/pages/index/carousel-foto2.jpg');
+    background-position: top right;
+}
+
+.bkg-cor{
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+h2 {
+    margin: calc(2 * var(--padding-gap)) 0;
+}
+
+.page-p--n-container p {
+    margin: var(--padding-gap) 0;
+    text-align: justify;
+}
+
+.page-p--n-container p:first-child {
+    margin: calc(2 * var(--padding-gap)) 0;
+}
+
+.page-p--n-container img {
+    box-shadow: 0 0 10px black;
+}
+
+.gif-baron:hover{
+    background-image: url('../../../assets/images/pages/porto--navio/baron_gif.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.gif-baron:hover img{
+    opacity:0;
+}
+
+.navio-baron {
+    width: 100%;
+}
+
+.submarino-u507-suface {
+    float: right;
+    /* margin-top: var(--padding-gap); */
+    margin-left: var(--padding-gap);
+    margin-bottom: var(--padding-gap);
+    width: 600px;
+}
+
+.mascote {
+    float: right;
+    margin-left: var(--padding-gap);
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.gif-uboat2:hover{
+
+    background-image: url('../../../assets/images/pages/porto--navio/Video\ Project\ 5.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gif-uboat2:hover img{
+    opacity:0;
+}
+
+.u507-laconia {
+    width: 100%;
+    height: 100%;
+}
+
+.baron-dechmont {
+    float: right;
+    width: 50%;
+    margin-left: var(--padding-gap);
+    /* margin-bottom: var(--padding-gap); */
+}
+
+.img-segunda-guerra {
+    display: flex;
+    gap: calc(2 * var(--padding-gap));
+}
+
+.img-segunda-guerra div:first-child {
+    width: 64.4%;
+}
+
+.img-segunda-guerra div:last-child {
+    width: 35.6%;
+}
+
+.img-segunda-guerra img {
+    width: 100%;
+}
+
+.cartaz {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #315a7a;
+    /* Azul escuro do cabeçalho */
+    color: white;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Ajuste de cores das linhas alternadas */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Estilo específico para colunas numéricas se necessário */
+.txt-center {
+    text-align: left;
+}
+
+.ficha-navio{
+    width: 100%;
+}
+
+.diario{
+    display: flex;
+    gap: var(--padding-gap);
+}
+
+.diario div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.diario img{
+    width: 100%;
+}

@@ -1,0 +1,172 @@
+.conteudo{
+    background-image: url('../../../assets/images/pages/acervo--objetos/mozaico.png');
+}
+
+.descricao{
+    padding: var(--padding-gap) 0;
+}
+
+.data-repetida{
+    transform: translateX(-9px);
+}
+
+.page-a--d-container{
+    padding: calc(2 * var(--padding-gap));
+}
+
+.p-historia--publicacoes-foto1{
+    background-image: url('../../../assets/images/pages/acervo--documentos/cartoes.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto2{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1965.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto3{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1988.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.p-historia--publicacoes-foto4{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1989.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto5{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1989-2.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto6{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1989-3.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto7{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img1.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto8{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img2.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto9{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img3.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto10{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1996.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto11{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img4.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto12{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img5.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto13{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img6.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto14{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1997.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto15{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1999.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto16{
+    background-image: url('../../../assets/images/pages/acervo--documentos/1999-2.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto17{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img7.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto18{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img8.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto19{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img9.jpg');
+    height: 100%;
+    background-size: cover;
+}
+
+.p-historia--publicacoes-foto20{
+    background-image: url('../../../assets/images/pages/acervo--documentos/relogio.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.p-historia--publicacoes-foto21{
+    background-image: url('../../../assets/images/pages/acervo--documentos/2011.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.p-historia--publicacoes-foto22{
+    background-image: url('../../../assets/images/pages/acervo--documentos/2013.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.p-historia--publicacoes-foto23{
+    background-image: url('../../../assets/images/pages/acervo--documentos/2014.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.p-historia--publicacoes-foto24{
+    background-image: url('../../../assets/images/pages/acervo--documentos/img10.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.p-historia--publicacoes-foto25{
+    background-image: url('../../../assets/images/pages/acervo--documentos/2020.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}

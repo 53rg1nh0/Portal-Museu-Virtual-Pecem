@@ -1,0 +1,8 @@
+.conteudo{
+    background-image: url('../../../assets/images/pages/historia--propagandas/Nova\ ponte\ de\ enbarque\ Ceará\ imagem\ de\ fundo.png');
+}
+
+
+.h--p-descricao {
+    padding: var(--padding-gap) 0;
+}

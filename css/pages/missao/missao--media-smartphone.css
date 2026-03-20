@@ -1,0 +1,29 @@
+@media screen and (max-width:666px) {
+    .missao-objetivos-valores {
+        flex-direction: column;
+    }
+
+   .missao--cronologia{
+        padding-right: calc(2 * var(--padding-gap)) ;
+        padding-left: calc(2 * var(--padding-gap)) ;
+    }
+
+    .evento-s {
+        max-width: 100%;
+    }
+
+    .ponto-serpente-cronologica:first-child::before,
+    .ponto-serpente-cronologica:last-child::before {
+       /* position: relative; */
+       left: 87%;
+    }
+
+    .ponto-serpente-cronologica:nth-child(2n-1) .data {
+        left: 38px;
+    }
+
+    .ponto-serpente-cronologica:nth-child(2n) .data {
+
+        right: -95px;
+    }
+}

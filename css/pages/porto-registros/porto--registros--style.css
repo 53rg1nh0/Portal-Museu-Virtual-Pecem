@@ -1,0 +1,8 @@
+.conteudo{
+    background-image: url('../../../assets/images/pages/index/carousel-foto2.jpg');
+    background-position: top right;
+}
+
+.p--r-descricao {
+    padding: var(--padding-gap) 0;
+}

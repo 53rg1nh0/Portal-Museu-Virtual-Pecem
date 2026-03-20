@@ -1,0 +1,229 @@
+@media screen and (min-width: 666px) and (max-width: 1400px) {
+    :root {
+        --padding-gap: 1.7rem;
+        --altura-conteudo: calc(100vh - 10.05rem);
+        --scala: 203.28 / 315;
+        --margin-left-evento: 4.5ch;
+    }
+
+    .baner {
+        padding: 0 var(--padding-gap);
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .baner-logo {
+        text-align: center;
+    }
+
+    .baner-logo img {
+        width: 250px;
+    }
+
+    .baner-navio {
+        flex-direction: column;
+        width: 22rem;
+    }
+
+    .navegacao {
+        flex-direction: column;
+    }
+
+    .navegacao-top {
+        padding: 1rem var(--padding-gap);
+    }
+
+    .lbl-menu {
+        padding: .64rem 0;
+        cursor: pointer;
+    }
+
+    .hamburger-menu,
+    .hamburger-menu::before,
+    .hamburger-menu::after {
+        height: .24rem;
+        width: 1.7rem;
+        background-color: var(--primary-color);
+        border-radius: .12rem;
+        transition: .3s;
+    }
+
+    .hamburger-menu::after {
+        content: "";
+        display: block;
+        position: absolute;
+        transform: translateY(.62rem);
+    }
+
+    .hamburger-menu::before {
+        content: "";
+        display: block;
+        position: absolute;
+        transform: translateY(-.62rem);
+    }
+
+    #chk:checked+.lbl-menu .hamburger-menu {
+        background-color: transparent;
+    }
+
+    #chk:checked+.lbl-menu .hamburger-menu::before {
+        background-color: var(--secudary-color);
+        transform: rotate(45deg);
+    }
+
+    #chk:checked+.lbl-menu .hamburger-menu::after {
+        background-color: var(--secudary-color);
+        transform: rotate(-45deg);
+    }
+
+    .navegacao-top:has(#chk:checked)~.menu {
+        height: var(--altura-conteudo);
+    }
+
+    .menu,
+    .submenu {
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: .5s ease;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .submenu {
+        border-radius: 1.3rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .menu li,
+    .submenu li {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .item {
+        font-weight: 700;
+    }
+
+    .item:focus+.submenu {
+        padding: .7rem;
+        height: fit-content;
+        margin-top: .7rem;
+    }
+
+     .submenu:has(.subitem:focus) {
+        padding: .7rem;
+        height: fit-content;
+        margin-top: .7rem;
+    }
+
+    @media screen and (max-height: 820px) {
+
+        .menu {
+            padding: 0 var(--padding-gap);
+
+        }
+
+        .item:focus,
+        .submenu {
+            background-color: #dbebeb;
+            transition: none;
+        }
+
+        .item:focus {
+            padding: 1rem;
+            border-left: 4px solid var(--secudary-color);
+        }
+
+        :has(.item:focus)>li .item,
+        :has(.subitem:focus)>li .item {
+            text-align: left;
+        }
+
+        .item:focus+.submenu,
+        .submenu:has(.subitem:focus) {
+            position: absolute;
+            height: var(--altura-conteudo);
+            border-radius: 0;
+            width: 50vw;
+            top: 9.12rem;
+            right: 0;
+        }
+
+        .submenu:has(.subitem:focus) {
+            top: 10rem;
+        }
+    }
+
+    .citacao strong {
+        font-size: 1.2rem;
+    }
+
+    .logos {
+        align-content: center;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .title,
+    .subtitle,
+    .paragrafe {
+        padding-left: var(--padding-gap);
+        padding-right: var(--padding-gap);
+    }
+
+    .linha-cronologica{
+        width: 70ch;
+    }
+
+    .linha-cronologica::before{
+        left: 55px
+    }
+
+    .ponto-linha-cronologica {
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .ponto-linha-cronologica:first-child::before,
+    .ponto-linha-cronologica:last-child::before {
+        left: 60px
+    }
+
+    .evento {
+        margin-left: var(--margin-left-evento);
+    }
+
+    .foto-evento{
+        background-position: center;
+        margin-left: var(--margin-left-evento);
+    }
+
+    .data {
+        transform: translateX(-65px);
+    }
+
+    .modal-content{
+        width: 550px;
+    }
+
+    .foto {
+        width: calc(33% - var(--padding-gap));
+    }
+
+     @media screen and (max-width: 850px) {
+        .foto {
+            width: calc(50% - var(--padding-gap));
+        }
+    }
+}

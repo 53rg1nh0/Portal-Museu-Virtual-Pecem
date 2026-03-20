@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import 'historia--linha--style.css';
+@import 'historia--linha--media-desktop.css';
+@import 'historia--linha--media-tablet.css';
+@import 'historia--linha--media-smartphone.css';

@@ -1,0 +1,26 @@
+@media screen and (max-width:999px) {
+    .img-segunda-guerra {
+        flex-direction: column;
+    }
+
+    .img-segunda-guerra div:first-child {
+        width: 100%;
+    }
+
+    .img-segunda-guerra div:last-child {
+        width: 100%;
+    }
+
+    .img-segunda-guerra img {
+        width: 100%;
+    }
+
+    .diario {
+        flex-direction: column;
+    }
+
+    table{
+        table-layout: fixed;
+        font-size:1.7vw;
+    }
+}

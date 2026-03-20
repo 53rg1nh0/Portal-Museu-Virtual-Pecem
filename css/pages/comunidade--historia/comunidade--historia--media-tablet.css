@@ -1,0 +1,13 @@
+@media screen and (min-width: 666px) and (max-width: 1400px) {
+
+    @media screen and (max-width:1150px) {
+        .capela {
+            width: 50%;
+        }
+
+        .documento {
+            width: 50%;
+            padding: 0;
+        }
+    }
+}

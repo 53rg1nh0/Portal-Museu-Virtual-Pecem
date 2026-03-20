@@ -1,0 +1,234 @@
+:root {
+    --book-width: 620px;
+    --book-height: 840px;
+    --speed: 0.6s;
+}
+
+.conteudo {
+    background-image: url('../../../assets/images/pages/index/carousel-foto2.jpg');
+    background-position: top right;
+}
+
+/* .bkg-cor {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.book-container {
+    perspective: 1500px;
+}
+
+.book {
+    position: relative;
+    width: var(--book-width);
+    height: var(--book-height);
+    transition: transform var(--speed);
+    transform-style: preserve-3d;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+    transform-origin: left center;
+    transition: transform var(--speed);
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.back {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.front img,
+.back img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.flipped {
+    transform: rotateY(-180deg);
+}
+
+@media (max-width: 600px) {
+    :root {
+        --book-width: 250px;
+        --book-height: 350px;
+    }
+} */
+
+
+
+
+
+.bkg-cor {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.book-container {
+  perspective: 1500px;
+  position: relative;
+}
+
+.book {
+  position: relative;
+  width: var(--book-width);
+  height: var(--book-height);
+  transition: transform var(--speed);
+  transform-style: preserve-3d;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left center;
+  transition: transform var(--speed), left var(--speed), opacity var(--speed);
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 3px 0px 20px rgba(0,0,0,0.1);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.front img, .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+@media (orientation: landscape) {
+  .flipped {
+    transform: rotateY(-180deg);
+  }
+}
+
+
+@media (orientation: portrait) {
+  :root {
+    --book-width: 85vw;
+    --book-height: 70vh;
+  }
+
+  .book-container {
+    perspective: none; 
+  }
+
+  .paper {
+    transform-origin: center;
+    transition: left var(--speed) ease-in-out, opacity var(--speed);
+  }
+
+
+  .paper.flipped {
+    transform: rotateY(0deg); 
+    left: -120%; 
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+  .back {
+    display: none; 
+  }
+}
+
+.controls {
+    width: 100%;
+    position: absolute;
+    bottom: -52px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    padding: 10px 0;
+    border-radius: 30px;
+
+}
+
+.controls button, .traj {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #03969C;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.traj{
+    padding: 3px 15px;
+}
+
+.controls button:hover, .traj:hover {
+    opacity: 0.8;
+}
+
+.page-search {
+    display: flex;
+    gap: 5px;
+}
+
+#pageInput {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+@media (orientation: portrait) {
+    .controls {
+        bottom: 10px;
+        scale: 0.9;
+    }
+}

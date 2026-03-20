@@ -1,0 +1,5 @@
+@media screen and (min-width: 666px) and (max-width: 1400px) {
+    .carousel {
+        height: calc(100vh - 10.05rem);
+    }
+}

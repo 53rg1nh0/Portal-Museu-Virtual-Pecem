@@ -1,0 +1,101 @@
+:root {
+    --cor-radio: rgba(255, 255, 255, 0.486)
+}
+
+input {
+    display: none;
+}
+
+.carousel {
+    height: calc(100vh - 11.67rem);
+    overflow: hidden;
+}
+
+.banner-inicial {
+    width: 300vw;
+    display: flex;
+    height: 100%;
+    transition: transform .5s ease;
+}
+
+.banner-inicial div {
+    height: 100%;
+}
+
+.banner-inicial .div-img {
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-inicial .div-img1 {
+    background-image: url('../../../assets/images/pages/index/carousel-foto1.jpg');
+    background-position: center;
+}
+
+.banner-inicial .div-img2 {
+    background-image: url('../../../assets/images/pages/index/carousel-foto2.jpg');
+    background-position: center;
+}
+
+.banner-inicial .div-img3 {
+    background-image: url('../../../assets/images/pages/index/carousel-foto3.jpg');
+    background-position: center;
+}
+
+
+.btns {
+    width: 100%;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 1;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    width: .7rem;
+    height: .7rem;
+    background-color: var(--cor-radio);
+    border-radius: 50%;
+}
+
+.rad:checked+label .btn {
+    background-color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+:has(#rad1:checked) .banner-inicial {
+    transform: translateX(0);
+}
+
+:has(#rad2:checked) .banner-inicial {
+    transform: translateX(-33.33%);
+}
+
+:has(#rad3:checked) .banner-inicial {
+    transform: translateX(-66.67%);
+}
+
+@media (orientation: portrait) {
+
+    .banner-inicial .div-img1 {
+        background-position: right;
+    }
+
+    .banner-inicial .div-img2 {
+        background-position: 75%;
+    }
+
+    .banner-inicial .div-img3 {
+        background-position: 90%;
+    }
+}
+

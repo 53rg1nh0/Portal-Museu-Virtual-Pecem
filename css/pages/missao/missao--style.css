@@ -1,0 +1,164 @@
+.missao--img-fundo {
+    /* background-image: url('../../../assets/images/pages/missao/missao.jpg'); */
+}
+
+.bkg-cor h1 {
+    text-shadow: 1px 1px 0 black;
+}
+
+.conteudo {
+    background-image: url('../../../assets/images/pages/index/carousel-foto3.jpg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* color:white; */
+
+}
+
+.bkg-cor {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.missao-objetivos-valores {
+    gap: var(--padding-gap);
+    padding: var(--padding-gap);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missao-objetivos-valores article {
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.missao-objetivos-valores .subtitle,
+.missao-objetivos-valores .paragrafe {
+    text-align: center;
+    margin: 0;
+}
+
+.missao-objetivos-valores .subtitle {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-shadow: none;
+    color: white;
+    text-align: center;
+}
+
+.missao-objetivos-valores article:nth-child(1) .subtitle {
+    background-color: var(--primary-color);
+}
+
+.missao-objetivos-valores article:nth-child(2) .subtitle {
+    background-color: var(--secudary-color);
+}
+
+.missao-objetivos-valores article:nth-child(3) .subtitle {
+    background-color: var(--cor-rodape);
+}
+
+.missao-objetivos-valores li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.missao-objetivos-valores .subtitle,
+.missao-objetivos-valores .paragrafe {
+    padding: var(--padding-gap);
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.missao--cronologia {
+    /* gap: var(--padding-gap); */
+    padding: var(--padding-gap);
+}
+
+.ponto-serpente-cronologica {
+    /* padding: var(--padding-gap); */
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.evento-s {
+    width: 100%;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    max-width: 100%;
+    margin-top: -4px;
+    padding: calc(2 * var(--padding-gap)) calc(2 * var(--padding-gap));
+    align-content: center;
+}
+
+.missao--cronologia .foto-evento {
+    height: fit-content;
+}
+
+
+
+
+
+
+.ponto-serpente-cronologica:first-child::before,
+.ponto-serpente-cronologica:last-child::before {
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.ponto-serpente-cronologica:last-child::before {
+    bottom: 0;
+}
+
+
+
+    /* .ponto-serpente-cronologica:nth-child(2n) .foto-evento {
+        background-position: right;
+    }
+
+    .ponto-serpente-cronologica:nth-child(2n + 1) .foto-evento {
+        background-position:left;
+    } */
+
+    .ponto-serpente-cronologica:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+
+
+
+
+.ponto-serpente-cronologica:nth-child(2n - 1) .evento-s {
+    border-left: 4px solid black;
+    border-radius: 30px 0 0 30px;
+    text-align: start;
+}
+
+.ponto-serpente-cronologica:nth-child(2n) .evento-s {
+    border-right: 4px solid black;
+    border-radius: 0 30px 30px 0;
+    text-align: end;
+}
+
+.ponto-serpente-cronologica:first-child::before {
+    margin-left: -14px;
+    transform: translatey(-13px)
+}
+
+.ponto-serpente-cronologica:last-child::before {
+    transform: translateY(11px);
+    margin-left: -14px;
+}
