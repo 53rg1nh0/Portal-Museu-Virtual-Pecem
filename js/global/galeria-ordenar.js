@@ -20,6 +20,6 @@
         htmlSlides += '<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a><div class="caption-container"><p id="caption"></p></div> </div></div>'
         const fotos = document.getElementsByClassName('fotos')[0];
         fotos.innerHTML = htmlFotos + htmlSlides;
-    }, 100);
+    }, 200);
 })();
 
