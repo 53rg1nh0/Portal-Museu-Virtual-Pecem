@@ -68,11 +68,15 @@ setTimeout(() => {
       if (index < currentState) {
         // Páginas que já foram viradas
         paper.classList.add('flipped');
-        paper.style.zIndex = index + 1;
+        setTimeout(() => {
+          paper.style.zIndex = index + 1;
+        }, 100);
       } else {
         // Páginas que ainda não foram viradas
         paper.classList.remove('flipped');
-        paper.style.zIndex = papers.length - index;
+        setTimeout(() => {
+          paper.style.zIndex = papers.length - index;
+        }, 100);
       }
     });
 
