@@ -2,7 +2,11 @@ loadPage("page-historia--linha", "page-historia--linha.html");
 
 setTimeout(() => {
     const container = document.querySelector('.linha-tempo');
-    const anos = document.createElement('div');
+    if(!container){
+        window.location.reload();
+    }
+    else{
+        const anos = document.createElement('div');
     anos.setAttribute('class', 'anos');
     const artigo = document.querySelectorAll('.artigo');
     const linha = document.querySelector('.linha-tempo');
@@ -100,4 +104,5 @@ setTimeout(() => {
             next(ativo);
         }
     });
+    }
 }, 250)

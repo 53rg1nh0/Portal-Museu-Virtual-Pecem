@@ -1,6 +1,10 @@
 setTimeout(() => {
   const book = document.querySelector('.book');
-  function criarLivro() {
+  if(!book){
+    window.location.reload();
+  }
+  else{
+    function criarLivro() {
     const nPag = 100;
 
     for (let i = 1; i <= nPag; i++) {
@@ -130,4 +134,5 @@ setTimeout(() => {
 
   // Inicializa o z-index correto
   updateBook();
+  }
 }, 100);
