@@ -108,7 +108,7 @@ setTimeout(() => {
     const targetPage = parseInt(pageInput.value);
     // Como cada 'paper' tem 2 páginas, dividimos por 2 para achar o índice do paper
     // Ex: Página 3 está no paper 2 (índice 1)
-    if (targetPage >= 1 && targetPage <= maxState * 2) {
+    if (targetPage >= 0 && targetPage <= maxState * 2) {
       currentState = Math.ceil(targetPage / 2);
       updateBook();
     } else {
