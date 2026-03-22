@@ -145,6 +145,7 @@ setTimeout(() => {
         } else {
           currentState = index + 1;
         }
+        pageInput.value = currentState * 2 - 1;
         updateBook();
       });
     });
