@@ -4,6 +4,7 @@ setTimeout(() => {
     const container = document.querySelector('.linha-tempo');
     if(!container){
         window.location.reload();
+        setTimeout(() => {}, 1000);
     }
     else{
         const anos = document.createElement('div');
