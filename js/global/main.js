@@ -14,7 +14,6 @@
             return null;
         }
     }
-
     async function checkForUpdate() {
         const newVersion = await fetchVersion();
         if (!newVersion) return;
@@ -28,37 +27,6 @@
             localStorage.setItem(STORAGE_KEY, newVersion);
         }
     }
-
     checkForUpdate();
     setInterval(checkForUpdate, CHECK_INTERVAL_MS);
 })();
-// Limpa cache
-
-// Carrega os componentes e paginas
-
-function loadComponent(id, file) {
-    fetch(`components/${file}`)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(id).innerHTML = data;
-        });
-}
-
-function loadPage(id, file) {
-    fetch(`page/${file}`)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(id).innerHTML = data;
-        });
-}
-
-// Carregar cada component e paginas
-loadComponent("baner", "baner.html");
-loadComponent("navegacao", "navegacao.html");
-
-//loadPage("page-index", "page-index.html")
-//loadPage("page-missao", "page-missao.html")
-//loadPage("page-comunidade--documentos", "page-comunidade--documentos.html")
-
-loadComponent("footer", "footer.html");
-// Carrega os componentes e paginas

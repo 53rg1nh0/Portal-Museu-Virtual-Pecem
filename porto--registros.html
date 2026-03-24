@@ -11,15 +11,616 @@
 </head>
 
 <body>
-    <header class="baner" id="baner"></header>
-    <nav class="navegacao" id="navegacao"></nav>
+    <header class="baner" id="baner">
+        <div class="baner-logo">
+            <img src="assets/images/global/logo-museu.svg" alt="Logo Museu Virtual o Pecém">
+        </div>
 
-    <section class="page-porto--registros conteudo" id="page-porto--registros"></section>
+        <div class="baner-navio">
+            <h1>A História do Ceará passa por aqui</h1>
+        </div>
+    </header>
 
-    <footer class="footer" id="footer"></footer>
+    <nav class="navegacao" id="navegacao">
+        <div class="navegacao-top">
+            <a class="logo-pecem" href="https://www.complexodopecem.com.br/"></a>
+            <input type="checkbox" name="chk" id="chk" style="display: none;">
+            <label class="lbl-menu" for="chk">
+                <div class="hamburger-menu"></div>
+            </label>
+        </div>
+        <ul class="menu">
+            <li><a class="item" href="index.html">Home</a></li>
+            <li><a class="item" href="missao.html">Missão, objetivo e valores</a></li>
+            <li>
+                <p class="item" tabindex="0">Cumunidade</p>
+                <ul class="submenu">
+                    <li><a class="subitem" tabindex="0" href="comunidade--documentos.html">Documentos</a></li>
+                    <li><a class="subitem" tabindex="0" href="comunidade--historia.html">Histórias</a></li>
+                    <li><a class="subitem" tabindex="0" href="comunidade--publicacoes.html">Publicações</a></li>
+                    <li><a class="subitem" tabindex="0" href="comunidade--fotos.html">Fotos</a></li>
+                    <li><a class="subitem" tabindex="0" href="comunidade--videos.html">Vídeos</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="item" tabindex="0">História portuária do Pecém</p>
+                <ul class="submenu">
+                    <li><a class="subitem" tabindex="0" href="historia--publicacoes.html">Publicações portuárias</a>
+                    </li>
+                    <li><a class="subitem" tabindex="0" href="historia--linha.html">Linha do tempo</a></li>
+                    <li><a class="subitem" tabindex="0" href="historia--propagandas.html">Propagandas e afins</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="item" tabindex="0">Acervo físico</p>
+                <ul class="submenu">
+                    <li><a class="subitem" tabindex="0" href="acervo--documentos.html">Documentos</a></li>
+                    <li><a class="subitem" tabindex="0" href="acervo--objetos.html">Objetos</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="item" tabindex="0">Porto do Pecém</p>
+                <ul class="submenu">
+                    <li><a class="subitem" tabindex="0" href="porto--fotos.html">Fotos da obra</a></li>
+                    <li><a class="subitem" tabindex="0" href="porto--registros.html">Registros históricos</a></li>
+                    <li><a class="subitem" tabindex="0" href="porto--navio.html">Navio do Pecém</a></li>
+                    <li><a class="subitem" tabindex="0" href="porto--trajetoria.html">Trajetória portuária</a></li>
+                    <li><a class="subitem" tabindex="0" href="porto--videos.html">Vídeos</a></li>
+                    <li><a class="subitem" tabindex="0" href="porto--porto.html">Porto do século XIX</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="item" tabindex="0">Complexo industrial</p>
+                <ul class="submenu">
+                    <li><a class="subitem" tabindex="0" href="complexo--fotos.html">Fotos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="page-porto--registros conteudo" id="page-porto--registros">
+        <div class="bkg-cor">
+            <div class="page-p--r-container width">
+                <h1 class="page-p--r-title title">Registros históricos</h1>
+                <p class="p--r-descricao">Registros de datas importantes e marcantes para o Porto do Pecém. Clique na
+                    foto para ver o descritivo.
+                </p>
+                <section class="p--r fotos">
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img34.jpg"
+                            onclick="openModal();currentSlide(1)" class="hover-shadow demo"
+                            alt="1895 - Jornal A República com referência ao Porto do Pecém, com estrutura em aço e indústria local">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img27.jpg"
+                            onclick="openModal();currentSlide(2)" class="hover-shadow demo"
+                            alt="1979 - Ponta do Mucuripe (ao centro) e ponta do Pecém (a esquerda) registrada em foto da nave Endeavor em missão espacial de 1979">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img28.jpg"
+                            onclick="openModal();currentSlide(3)" class="hover-shadow demo"
+                            alt="1995 - Instalação do Marégrafo vindo do Rio de Janeiro">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img19.jpg"
+                            onclick="openModal();currentSlide(4)" class="hover-shadow demo"
+                            alt="1996 (Maio) - Início das obras do Terminal Portuário do Pecém e obras de infra-estrutura. Foto: 1996 Ponta do Pecém - Instalação do Canteiro de obras.">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img33.png"
+                            onclick="openModal();currentSlide(5)" class="hover-shadow demo"
+                            alt="1998 - Troca do ondografo que havia sido instalado em 1995">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img21.jpg"
+                            onclick="openModal();currentSlide(6)" class="hover-shadow demo"
+                            alt="2000 (Agosto) - Em agosto o navio Zhen Huan 4 traz e desembarga os dois guindastes de operação">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img22.jpg"
+                            onclick="openModal();currentSlide(7)" class="hover-shadow demo"
+                            alt="2000 (Agosto) - Obra de conclusão finalizada">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img4.jpg"
+                            onclick="openModal();currentSlide(8)" class="hover-shadow demo"
+                            alt="2002 (Julho) - 1ª exportação de produtos eólicos produzidos no CIPP">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img23.jpg"
+                            onclick="openModal();currentSlide(9)" class="hover-shadow demo"
+                            alt="2002 (Outubro) - 1ª Operação de transbordo, realizada no Píer 2">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img24.jpg"
+                            onclick="openModal();currentSlide(10)" class="hover-shadow demo"
+                            alt="2002 (Março) - É colocado o primeiro contêiner no pátio">
+                    </div>
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img31.jpg"
+                            onclick="openModal();currentSlide(11)" class="hover-shadow demo"
+                            alt="2002 - Cerimônia inauguração do Terminal Portuário do Pecém - Foto de Marcos Studart">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img32.jpg"
+                            onclick="openModal();currentSlide(12)" class="hover-shadow demo"
+                            alt="2002 - Cerimônia inauguração do Terminal Portuário do Pecém - Foto de Marcos Studart">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img20.jpg"
+                            onclick="openModal();currentSlide(13)" class="hover-shadow demo"
+                            alt="2003 (Setembro) - Início de operações de transporte pela ferrovia.">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img35.jpg"
+                            onclick="openModal();currentSlide(14)" class="hover-shadow demo"
+                            alt="2004 - Solenidade de recebimento de certificação ISPS CODE">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img25.jpg"
+                            onclick="openModal();currentSlide(15)" class="hover-shadow demo"
+                            alt="2004 (Novembro) - Prova do primeiro concurso público realizado pela Companhia">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img5.jpg"
+                            onclick="openModal();currentSlide(16)" class="hover-shadow demo"
+                            alt="2004 (Dezembro) - 1º porto do país a obter a ceritificação ISPS Code">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img15.jpg"
+                            onclick="openModal();currentSlide(17)" class="hover-shadow demo"
+                            alt="2009 (Março) - Sondagens para construção do TMUT - Terminal de Múltiplas Utilidades do Porto do Pecém">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img30.jpeg"
+                            onclick="openModal();currentSlide(18)" class="hover-shadow demo"
+                            alt="2009 - 1º Registro de Arqueamento de GNL">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img16.jpg"
+                            onclick="openModal();currentSlide(19)" class="hover-shadow demo"
+                            alt="2010 (Abril) - Posicionamento da 1ª estaca do cais do TMUT - Terminal de Múltiplas Utilidades">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img17.jpg"
+                            onclick="openModal();currentSlide(20)" class="hover-shadow demo"
+                            alt="2010 (Agosto) - Finalização da ampliação do quebra mar do Terminal Portuário do Pecém">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img6.jpg"
+                            onclick="openModal();currentSlide(21)" class="hover-shadow demo"
+                            alt="2010 (Setembro) - Obras da 1ª esteira de transporte de carvão">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img18.jpg"
+                            onclick="openModal();currentSlide(22)" class="hover-shadow demo"
+                            alt="2011 (Agosto) - Inauguração do TMUT - Terminal de Multiplas utilidades do Porto do Pecém com dois novos berços de atracação">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img2.jpg"
+                            onclick="openModal();currentSlide(23)" class="hover-shadow demo"
+                            alt="2011 (Novembro) - 1ª Operação Comercial - Navio São Lourenço">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img3.jpg"
+                            onclick="openModal();currentSlide(24)" class="hover-shadow demo"
+                            alt="2011 (Novembro) - Missa embaixo da ponte, alusivo à 1ª Operação Comercial">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img9.jpg"
+                            onclick="openModal();currentSlide(25)" class="hover-shadow demo"
+                            alt="2016 - Chegada dos STS para operação de container no TMUT">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img10.jpg"
+                            onclick="openModal();currentSlide(26)" class="hover-shadow demo"
+                            alt="2016 - 1ª operação de blocos de granito">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img14.jpg"
+                            onclick="openModal();currentSlide(27)" class="hover-shadow demo"
+                            alt="2016 (Maio) - Chegada e descarregamento do descarregador de minério de ferro no píer 1">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img12.jpg"
+                            onclick="openModal();currentSlide(28)" class="hover-shadow demo"
+                            alt="2016 (Julho) - 1ª placa produzida pela CSP a ser recepcionada no pátio">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img11.jpg"
+                            onclick="openModal();currentSlide(29)" class="hover-shadow demo"
+                            alt="2016 (Agosto) - Início do carregamento do navio Emerald Bay, o primeiro a movimentar placas de aço da CSP no Pecém. Destino Itália e Turquia">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img7.jpg"
+                            onclick="openModal();currentSlide(30)" class="hover-shadow demo"
+                            alt="2016 (Outubro) - CSU para descarregamento de minério já montado e em testes">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img36.jpg"
+                            onclick="openModal();currentSlide(31)" class="hover-shadow demo"
+                            alt="2017 - Matéria sobre a assinatura do memorando entre o Porto do Pecém e o Porto de Rotterdam.">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img38.JPG"
+                            onclick="openModal();currentSlide(32)" class="hover-shadow demo"
+                            alt="2019 - Reinauguração da capela da praia com a presença dos funcionários e dos membros da comunidade">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img26.jpg"
+                            onclick="openModal();currentSlide(33)" class="hover-shadow demo"
+                            alt="2021 (Novembro) - Inauguração do Setor 2 da ZPE Ceará">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img42.png"
+                            onclick="openModal();currentSlide(34)" class="hover-shadow demo"
+                            alt="2021 – O Porto do Pecém passa a ser o primeiro Terminal Portuário do Brasil a ter implementado o conceito de 'Single Window' ou  Janela Única. É uma facilidade que permite, aos envolvidos no comércio e no transporte, a padronização de informações e documentos, com um ponto de única entrada para cumprir todo o processo de importação, exportação, cabotagem, e exigências reguladoras.">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img44.png"
+                            onclick="openModal();currentSlide(35)" class="hover-shadow demo"
+                            alt="2021 – Em 19 de fevereiro de 2021 o Governo do Estado, Federação das Indústrias do Estado do Ceará (FIEC), CIPP e Universidade Federal do Ceará (UFC) e Complexo do Pecém (CIPP S/A), assinam o memorando de entendimentos para a criação do Hub  de Hidrogênio Verde e de Políticas voltadas para o desenvolvimento econômico sustentável.">
+                    </div>
+
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img29.jpg"
+                            onclick="openModal();currentSlide(36)" class="hover-shadow demo"
+                            alt="1958 a 2022 - Ponta do Pecém registrada em diversos anos">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img37.jpg"
+                            onclick="openModal();currentSlide(37)" class="hover-shadow demo"
+                            alt="2022 - Em Janeiro de 2022 o Porto do Pecém inicia a operação com veículos elétricos em sua frota">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img39.jpg"
+                            onclick="openModal();currentSlide(38)" class="hover-shadow demo"
+                            alt="2022 - Chega ao Terminal do Pecém, 1 novo STS e 3 RTG's para aumentar a capacidade">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img40.jpg"
+                            onclick="openModal();currentSlide(39)" class="hover-shadow demo"
+                            alt="2022 - Em comemoração aos 20 anos do Terminal, é feito o encerramento do projeto capsula do tempo para ser aberta em 2042 no aniversário de 40 anos.">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img41.png"
+                            onclick="openModal();currentSlide(40)" class="hover-shadow demo"
+                            alt="2022 – Certificado Empresa McAmiga – Associação Peter Pan">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img43.jpg"
+                            onclick="openModal();currentSlide(41)" class="hover-shadow demo"
+                            alt="2024 –É realizada a solenidade de sansão da Lei do Hidrogênio Verde e do projeto de lei que garante o financiamento da Transnordestina.">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img45.jpg"
+                            onclick="openModal();currentSlide(42)" class="hover-shadow demo"
+                            alt="2024 – Em 9 de agosto de 2024 atraca no Pecém o maior navio já operado no Terminal, o MSC Jewel com 366metros de comprimento, superando o recorde anterior em 33 metro.">
+                    </div>
+
+                    <div class="foto">
+                        <img src="assets/images/pages/porto--registros/img46.png"
+                            onclick="openModal();currentSlide(43)" class="hover-shadow demo"
+                            alt="Recorte de mapa do Arquivo Histórico do Exército Brasileiro do ano de 1854, com destaque dos portos do Estado da época, em especial o Porto do Pecém.">
+                    </div>
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img34.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img27.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img28.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img19.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img33.png">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img21.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">7 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img22.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">8 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img4.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">9 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img23.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">10 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img24.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">11 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img31.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">12 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img32.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">13 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img20.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">14 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img35.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">15 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img25.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">16 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img5.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">17 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img15.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">18 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img30.jpeg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">19 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img16.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">20 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img17.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">21 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img6.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">22 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img18.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">23 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img2.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">24 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img3.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">25 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img9.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">26 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img10.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">27 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img14.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">28 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img12.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">29 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img11.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">30 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img7.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">31 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img36.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">32 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img38.JPG">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">33 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img26.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">34 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img42.png">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">35 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img44.png">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">36 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img29.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">37 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img37.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">38 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img39.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">39 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img40.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">40 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img41.png">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">41 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img43.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">42 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img45.jpg">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">43 / 43</div>
+                                <img src="assets/images/pages/porto--registros/img46.png">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer" id="footer">
+        <section class="citacao">
+            <strong>
+                A história do Porto do Pecém não começa no dia de sua inauguração, mas no suor de gerações que lutaram
+                por sua
+                viabilização
+            </strong>
+        </section>
+
+        <div class="contato">
+            <div class="contato-copyrigth--inside">
+                <div class="sobre">
+                    <h2>Sobre</h2>
+                    <p>O Museu Virtual do Pecém é um resgate da história do Terminal Portuário do Pecém e,
+                        paralelamente,
+                        cruza-se com a história da região e do Ceará. Arquivos de fotos, descrições, documentos e outros
+                        itens estão disponíveis aqui.</p>
+                </div>
+                <div class="navegue">
+                    <h2>Navegação</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Entre em Contato</a></li>
+                    </ul>
+                </div>
+                <div class="logos">
+                    <div class="logo-cipp"></div>
+                    <div class="roterdam-governo">
+                        <div class="logo-roterdam"></div>
+                        <div class="logo-governo-ceara"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="contato-copyrigth--inside">
+                <p>Copyright ©. Dezembro. 2022. Complexo do Pecém. Todos os direitos reservados.</p>
+                <p>Responsável: Márcio Mamede</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/global/main.js"></script>
-    <script>loadPage("page-porto--registros", "page-porto--registros.html");</script>
     <script src="js/global/galeria-show-slyde.js"></script>
 </body>
 

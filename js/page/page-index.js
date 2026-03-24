@@ -1,4 +1,4 @@
- loadPage("page-index", "page-index.html");
+//  loadPage("page-index", "page");
 
         carrossel();
 
