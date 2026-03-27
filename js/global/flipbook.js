@@ -147,7 +147,7 @@ function carregaPagina(p, n) {
 
 function moverLivro() {
     if (pag > -1) {
-        book.style.transform = 'translateX(270px)';
+        book.style.transform = 'translateX(50%)';
     }
     else {
         book.style.transform = 'translateX(0)';
