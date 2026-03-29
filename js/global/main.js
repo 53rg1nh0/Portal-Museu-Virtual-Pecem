@@ -4,7 +4,7 @@
     const VERSION_FILE = '/version.txt';
     const STORAGE_KEY = 'site_version';
     const CHECK_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
-
+    document.getElementsByClassName("scroll")[0].style.display = "none";
     async function fetchVersion() {
         try {
             const r = await fetch(VERSION_FILE, { cache: 'no-store' });
@@ -30,3 +30,22 @@
     checkForUpdate();
     setInterval(checkForUpdate, CHECK_INTERVAL_MS);
 })();
+
+const btn = document.getElementsByClassName("scroll")[0];
+
+window.onscroll = function() {
+  // Verifica se a rolagem passou de 300px
+  if (document.body.scrollTop > 157 || document.documentElement.scrollTop > 157) {
+    btn.style.display = "flex";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Funcionalidade de clique para voltar ao topo suavemente
+btn.onclick = function() {
+  window.scrollTo({
+    top: 0,
+    // behavior: 'smooth' // Rolagem suave
+  });
+};
