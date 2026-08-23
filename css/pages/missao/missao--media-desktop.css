@@ -1,0 +1,31 @@
+@media screen and (min-width: 1400px) {
+
+    .missao--img-fundo {
+        height: 320px;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .missao-objetivos-valores article {
+        width: 28%;
+    }
+
+    .missao-objetivos-valores article:nth-child(2) {
+        width: 44%;
+    }
+
+    .evento-s {
+        max-width: 50%;
+    }
+
+    .ponto-serpente-cronologica:nth-child(2n - 1) .data {
+        left: 4px;
+    }
+
+    .ponto-serpente-cronologica:nth-child(2n) .data {
+        right: -57px;
+        left: auto;
+        /* text-align: right; */
+
+    }
+}

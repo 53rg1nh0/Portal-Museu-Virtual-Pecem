@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import 'acervo--objetos--style.css';
+@import 'acervo--objetos--media-desktop.css';
+@import 'acervo--objetos--media-tablet.css';
+@import 'acervo--objetos--media-smartphone.css'

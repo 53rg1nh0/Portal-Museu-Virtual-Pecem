@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import 'complexo--fotos--style.css';
+@import 'complexo--fotos--media-desktop.css';
+@import 'complexo--fotos--media-tablet.css';
+@import 'complexo--fotos--media-smatphone.css';

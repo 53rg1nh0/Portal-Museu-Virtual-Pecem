@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import 'porto--navio--style.css';
+@import 'porto--navio--media-desktop.css';
+@import 'porto--navio--media-tablet.css';
+@import 'porto--navio--media-smartphone.css';

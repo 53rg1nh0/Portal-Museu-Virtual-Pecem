@@ -1,0 +1,11 @@
+.conteudo {
+    background-image: url('../../../assets/images/pages/historia--propagandas/Nova\ ponte\ de\ enbarque\ Ceará\ imagem\ de\ fundo.webp');
+}
+
+.bkg-cor {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.h--p-descricao {
+    padding: var(--padding-gap) 0;
+}

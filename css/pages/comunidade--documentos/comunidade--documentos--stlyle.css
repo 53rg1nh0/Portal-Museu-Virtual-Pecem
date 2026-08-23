@@ -1,0 +1,57 @@
+.conteudo {
+    background-image: url('../../../assets/images/pages/comunidade--fotos/imgm2005_.webp');
+}
+
+.bkg-cor {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-bottom: calc(3 * var(--padding-gap));
+}
+
+.p-comunidade--documentos-foto1 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1869.webp');
+}
+
+.p-comunidade--documentos-foto2 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1895.webp');
+}
+
+.p-comunidade--documentos-foto3 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1933.webp');
+}
+
+.p-comunidade--documentos-foto4 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1949.webp');
+}
+
+.p-comunidade--documentos-foto5 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1954.webp');
+}
+
+.p-comunidade--documentos-foto6 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1958.webp');
+}
+
+.p-comunidade--documentos-foto7 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1976.webp');
+}
+
+.p-comunidade--documentos-foto8 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1979.webp');
+}
+
+.p-comunidade--documentos-foto9 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/1980.webp');
+}
+
+.p-comunidade--documentos-foto10 {
+    background-image: url('../../../assets/images/pages/comunidade--documentos/2022.webp');
+}
+
+
+.bkg-cor {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

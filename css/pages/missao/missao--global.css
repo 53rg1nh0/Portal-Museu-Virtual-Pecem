@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import 'missao--style.css';
+@import 'missao--media-smartphone.css';
+@import 'missao--media-tablet.css';
+@import 'missao--media-desktop.css';

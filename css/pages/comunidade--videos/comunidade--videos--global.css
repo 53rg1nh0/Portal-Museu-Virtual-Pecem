@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import 'comunidade--videos--style.css';
+@import 'comunidade--videos--media-desktop.css';
+@import 'comunidade--videos--media-tablet.css';
+@import 'comunidade--videos--media-smartphone.css';

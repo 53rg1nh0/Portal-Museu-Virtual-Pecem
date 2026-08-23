@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import 'comunidade--historia-style.css';
+@import 'comunidade--historia--media-desktop.css';
+@import 'comunidade--historia--media-tablet.css';
+@import 'comunidade--historia--media-smartphone.css';

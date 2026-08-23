@@ -1,0 +1,236 @@
+.conteudo {
+    background-image: url('../../../assets/images/pages/index/carousel-foto2.webp');
+    background-position: top right;
+}
+
+.bkg-cor {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+h2 {
+    margin: calc(2 * var(--padding-gap)) 0;
+}
+
+.page-p--n-container p {
+    margin: var(--padding-gap) 0;
+    text-align: justify;
+}
+
+.page-p--n-container p:first-child {
+    margin: calc(2 * var(--padding-gap)) 0;
+}
+
+.page-p--n-container img {
+    box-shadow: 0 0 10px black;
+}
+
+/* .gif-baron:hover {
+    background-image: url('../../../assets/images/pages/porto--navio/baron_gif.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    will-change: transform;
+} */
+
+.baron {
+    width: 100%;
+    height: 500px;
+    background-image: url('../../../assets/images/pages/porto--navio/baron.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.baron video {
+    width: 100%;
+    height: 500px;
+    display: block;
+    opacity: 0;
+}
+
+.baron:hover video {
+    opacity: 1;
+}
+
+.video-u507 {
+    /* width: 100%;
+    height: 500px; */
+    float: right;
+    margin-left: var(--padding-gap);
+    background-image: url('../../../assets/images/pages/porto--navio/u507-suface.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.video-u507 video {
+    /* width: 100%;
+    height: 500px; */
+    display: block;
+    opacity: 0;
+}
+
+.video-u507:hover video {
+    opacity: 1;
+}
+
+
+
+.submarino-u507-suface {
+
+    width: 600px;
+}
+
+.mascote {
+    float: right;
+    margin-left: var(--padding-gap);
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.video-uboat2 {
+    background-image: url('../../../assets/images/pages/porto--navio/U-507_Laconia_1942_09_15.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.video-uboat2 video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+}
+
+.video-uboat2:hover video {
+    opacity: 1;
+}
+
+.u507-laconia {
+    width: 100%;
+    height: 100%;
+}
+
+.baron-dechmont {
+    float: right;
+    width: 50%;
+    margin-left: var(--padding-gap);
+    /* margin-bottom: var(--padding-gap); */
+}
+
+.img-segunda-guerra {
+    display: flex;
+    gap: calc(2 * var(--padding-gap));
+}
+
+.hidro {
+    width: 64.4%;
+}
+
+
+.img-segunda-guerra div:last-child {
+    width: 35.6%;
+}
+
+.img-segunda-guerra img {
+    width: 100%;
+}
+
+
+
+.video-hidro-aviao {
+    background-image: url('../../../assets/images/pages/porto--navio/catalina.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.video-hidro-aviao video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+}
+
+.video-hidro-aviao:hover video {
+    opacity: 1;
+}
+
+.uboat-video {
+    background-image: url('../../../assets/images/pages/porto--navio/uboat.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.uboat-video video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+}
+
+.uboat-video:hover video {
+    opacity: 1;
+}
+
+
+.cartaz {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #315a7a;
+    /* Azul escuro do cabeçalho */
+    color: white;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Ajuste de cores das linhas alternadas */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Estilo específico para colunas numéricas se necessário */
+.txt-center {
+    text-align: left;
+}
+
+.ficha-navio {
+    width: 100%;
+}
+
+.diario {
+    display: flex;
+    gap: var(--padding-gap);
+}
+
+.diario div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.diario img {
+    width: 100%;
+}

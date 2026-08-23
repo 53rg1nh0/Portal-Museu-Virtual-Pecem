@@ -1,0 +1,6 @@
+@media screen and (min-width: 1400px) {
+    .page-comunidade--documentos-container>p{
+        width: var(--desktop-width);
+        margin: auto;
+    }
+}

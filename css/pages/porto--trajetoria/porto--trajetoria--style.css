@@ -1,0 +1,19 @@
+.conteudo {
+    background-image: url('../../../assets/images/pages/index/carousel-foto2.webp');
+    background-position: top right;
+}
+
+.bkg-cor {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+.bkg-cor img {
+    height: 100%;
+}
