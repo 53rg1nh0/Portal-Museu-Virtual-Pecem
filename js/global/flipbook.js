@@ -198,7 +198,7 @@ function livro(url, urlPDF, numPaginas, opacidade = 0, capa = true, BOOK_PAGE_WI
             pageFlip.loadFromHTML(container.querySelectorAll('.' + page));
             loading.style.display = 'none';
 
-            // 4. Executa o pré-carregamento imediato com buffer
+            // Executa o pré-carregamento imediato com buffer
             updateBuffer();
             updatePageCounter();
 
@@ -238,7 +238,7 @@ function livro(url, urlPDF, numPaginas, opacidade = 0, capa = true, BOOK_PAGE_WI
             if (p >= 1 && p <= total) priorityQueue.push(p);
         });
 
-        // Adiciona 2 páginas à frente
+        // Adiciona 4 páginas à frente
         const maxVisible = Math.max(...visiblePages);
         for (let offset = 1; offset <= 4; offset++) {//--altera para 4 páginas
             const nextP = maxVisible + offset;
@@ -247,7 +247,7 @@ function livro(url, urlPDF, numPaginas, opacidade = 0, capa = true, BOOK_PAGE_WI
             }
         }
 
-        // Adiciona 2 páginas atrás
+        // Adiciona 4 páginas atrás
         const minVisible = Math.min(...visiblePages);
         for (let offset = 1; offset <= 4; offset++) {//->alterado para 4 páginas
             const prevP = minVisible - offset;
@@ -265,7 +265,7 @@ function livro(url, urlPDF, numPaginas, opacidade = 0, capa = true, BOOK_PAGE_WI
 
         // Desaloca páginas distantes (fora da margem de 6 páginas) para liberar RAM
         pageStates.forEach((state, pageNum) => {
-            if (pageNum < minVisible - 6 || pageNum > maxVisible + 6) {
+            if (pageNum < minVisible - 8 || pageNum > maxVisible + 8) {
                 const pageDiv = document.querySelector(`.${page}[data-page-number="${pageNum}"]`);
                 if (pageDiv) {
                     pageDiv.innerHTML = ''; // Apaga o Canvas do DOM
