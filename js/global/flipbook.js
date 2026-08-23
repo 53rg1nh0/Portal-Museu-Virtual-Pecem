@@ -123,8 +123,6 @@ function livro(url, urlPDF, numPaginas, opacidade = 0, capa = true, BOOK_PAGE_WI
         loading.style.display = 'block';
 
         try {
-            // 1. Obtém a estrutura básica do PDF
-            //-->pdfDoc = await pdfjsLib.getDocument(url).promise;
             for (i = 1; i <= numPaginas; i++) {
                 arrayLivro.push(url + 'pagina ' + i + '.webp')
             }
@@ -242,7 +240,7 @@ function livro(url, urlPDF, numPaginas, opacidade = 0, capa = true, BOOK_PAGE_WI
 
         // Adiciona 2 páginas à frente
         const maxVisible = Math.max(...visiblePages);
-        for (let offset = 1; offset <= 2; offset++) {
+        for (let offset = 1; offset <= 4; offset++) {//--altera para 4 páginas
             const nextP = maxVisible + offset;
             if (nextP <= total && !priorityQueue.includes(nextP)) {
                 priorityQueue.push(nextP);
@@ -251,7 +249,7 @@ function livro(url, urlPDF, numPaginas, opacidade = 0, capa = true, BOOK_PAGE_WI
 
         // Adiciona 2 páginas atrás
         const minVisible = Math.min(...visiblePages);
-        for (let offset = 1; offset <= 2; offset++) {
+        for (let offset = 1; offset <= 4; offset++) {//->alterado para 4 páginas
             const prevP = minVisible - offset;
             if (prevP >= 1 && !priorityQueue.includes(prevP)) {
                 priorityQueue.push(prevP);
