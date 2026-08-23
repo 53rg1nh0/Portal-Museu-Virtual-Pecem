@@ -727,6 +727,10 @@ button.item {
     overflow: hidden;
 }
 
+.page div {
+    will-change: transform;
+}
+
 
 .contain {
     background-color: transparent;
