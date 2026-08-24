@@ -48,6 +48,10 @@ h2 {
     opacity: 0;
 }
 
+.baron:hover {
+    background-image: none;
+}
+
 .baron:hover video {
     opacity: 1;
 }

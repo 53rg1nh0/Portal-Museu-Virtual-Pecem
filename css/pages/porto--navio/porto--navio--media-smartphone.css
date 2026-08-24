@@ -1,5 +1,7 @@
 @media screen and (max-width:666px) {
-    .submarino-u507-suface{
+
+    .video-u507,
+    .video-u507 video {
         width: 100%;
     }
 }

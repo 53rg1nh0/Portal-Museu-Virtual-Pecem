@@ -106,7 +106,7 @@
     }
 
     .item {
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 
     .item:focus+.submenu {
@@ -187,11 +187,12 @@
         width: 90%;
     }
 
-    .prev{
+    .prev {
         transform: translateX(50px);
         text-shadow: 0 0 10px black;
 
     }
+
     .next {
         transform: translateX(-43px);
         text-shadow: 0 0 10px black;
