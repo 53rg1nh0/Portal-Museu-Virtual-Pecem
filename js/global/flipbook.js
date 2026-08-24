@@ -146,7 +146,7 @@ function livro(url, urlPDF, numPaginas, opacidade = 0, capa = true, BOOK_PAGE_WI
                 maxHeight: 1350,
                 maxShadowOpacity: opacidade,
                 showCover: capa,
-                mobileScrollSupport: false,
+                mobileScrollSupport: true,
 
                 useMouseEvents: true,
                 clickEventForward: true
