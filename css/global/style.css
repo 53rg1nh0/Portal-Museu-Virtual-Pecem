@@ -2,11 +2,13 @@
 @font-face {
     font-family: "fontePrimaria";
     src: url(../../fonts/OpenSans.woff2) format("woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "fonteSecundaria";
     src: url(../../fonts/Bitter.woff2) format("woff2");
+    font-display: swap;
 }
 
 :root {
@@ -132,15 +134,6 @@ ul {
         opacity: .6;
     }
 }
-
-/* @keyframes seta {
-  0% {
-    transform: translateY(23px); 
-  }
-  100% {
-    transform: translateY(-23px);
-  }
-} */
 
 .scroll {
     display: flex;
@@ -447,18 +440,6 @@ ul {
     justify-content: center;
 }
 
-/* .ponto-linha-cronologica:first-child::before,
-.ponto-linha-cronologica:last-child::before {
-    content: "";
-    height: 24px;
-    width: 24px;
-    position: absolute;
-    left: 0;
-    background-color: black;
-    border-radius: 50%;
-    transform: translateX(-12px);
-} */
-
 .ponto-linha-cronologica:first-child::before {
     content: "";
     height: 24px;
@@ -673,6 +654,155 @@ button.item {
     font: inherit;
 }
 
+.container-livro {
+    background-color: rgba(0, 0, 0, 0.61);
+    /* display: flex; */
+    position: fixed;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    top: 0;
+}
+
+/* Área wrapper que dita as margens mínimas de 1rem */
+.livro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 1rem 3.5rem 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+#loading {
+    display: none;
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 20;
+}
+
+.flipbook {
+    transition: transform 0.1s ease-out;
+}
+
+.page {
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.toolbar {
+    color: white;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.book-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* .controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} */
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 350px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.controls button,
+.lnk-doc {
+    background-color: #31999D;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 0.9rem;
+    text-decoration: none;
+    box-shadow: 0 0 15px black;
+}
+
+.lnk-doc {
+    padding: 3.1px 14px;
+}
+
+.controls button:hover,
+.controls a:hover {
+    background-color: #2c8a8d;
+}
+
+.controls button:active {
+    transform: scale(.9);
+    box-shadow: 0 0 7px black;
+}
+
+/* Estilização do campo de busca de página */
+.page-jump {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 8px;
+    padding-left: 12px;
+    margin-right: 8px;
+    padding-right: 12px;
+}
+
+.controls input[type="number"] {
+    width: 60px;
+    padding: 6px 8px;
+    border: 2px solid #EAB84C;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-size: 0.9rem;
+    outline: none;
+    text-align: center;
+}
+
+.page-jump input[type="number"]::-webkit-inner-spin-button,
+.page-jump input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+    .toolbar {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+
 @media (prefers-reduced-motion: reduce) {
 
     *,
@@ -685,135 +815,6 @@ button.item {
     }
 }
 
-.livro {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 3rem 1rem;
-    padding-bottom: 70px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 99;
-}
-
-/* O elemento flipbook agora se adapta dinamicamente */
-.flipbook {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    max-height: 100%;
-    transform-origin: center center;
-    transition: transform 0.2s ease-out;
-    /* Transição suave ao redimensionar */
-}
-
-#loading {
-    display: none;
-    color: white;
-    font-size: 1.2rem;
-}
-
-
-.page {
-    background-color: transparent;
-    position: relative;
-    overflow: hidden;
-}
-
-.page div {
-    will-change: transform;
-}
-
-.contain {
-    background-color: transparent;
-    position: relative;
-    overflow: hidden;
-}
-
-.contain div {
-    background-size: contain !important;
-}
-
-.toolbar {
-    color: white;
-    padding: 12px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    bottom: 0;
-    background-color: transparent;
-    position: absolute;
-}
-
-.controls {
-    justify-content: center;
-    display: flex;
-    flex: 1;
-}
-
-.page-search {
-    display: flex;
-}
-
-.controls .btn-livro,
-.lnk-livro {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 6px 10px;
-    margin: 0 5px;
-    border-radius: 7px;
-    cursor: pointer;
-    transition: background 0.2s;
-    text-decoration: none;
-    box-shadow: 0 0 17px rgba(0, 0, 0, 0.716);
-}
-
-.controls .btn-livro:hover,
-.lnk-livro:hover {
-    background-color: var(--primary-color);
-}
-
-.controls .btn-livro:active,
-.lnk-livro:active {
-    transform: scale(.9);
-    box-shadow: 0 0 10px black;
-}
-
-
-.controls .ipt-livro {
-    padding: 8px 0 8px 16px;
-    width: 60px;
-}
-
-
-#page-num {
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-/* Skeleton animado para indicar o pré-carregamento */
-.page:empty::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    animation: loading-pulse 1.5s infinite;
-}
-
-
 @keyframes loading-pulse {
     0% {
         background-position: 200% 0;
@@ -821,5 +822,12 @@ button.item {
 
     100% {
         background-position: -200% 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .toolbar {
+        flex-direction: column;
+        gap: 8px;
     }
 }

@@ -85,13 +85,17 @@
         </ul>
     </nav>
 
-    <section class="page-porto--trajetoria conteiner-livro conteudo " id="page-porto--trajetoria">
+    <section class="page-porto--trajetoria conteudo " id="page-porto--trajetoria">
 
-        <div class="bkg-cor livro0">
-            <img src="assets/images/pages/porto--trajetoria/pagina 1.webp" alt="">
+        <div class="bkg-cor" style="padding-left: 1rem;padding-right: 1rem;">
+            <img class="flip" src="assets/images/pages/porto--trajetoria/pagina 1.webp"
+                alt="Livro Pecem uma trajetória portuária" pathWebp='assets/images/pages/porto--trajetoria'
+                pathPDF='assets/documents/pages/historia--publicacoes/2007 trajetoria.pdf' totalPaginas='200'
+                width='500' height='733' opacity='0.3'>
         </div>
 
-        <div class="livro"></div>
+
+        <div class="container-livro" style="z-index: 2; display: none;"></div>
     </section>
 
     <footer class="footer" id="footer">
@@ -141,9 +145,10 @@
         </div>
     </footer>
 
-    <script src="js/global/main.js"></script>
-    <script src='js/global/flipbook.js'></script>
     <script src="libs/page-flip.browser.js"></script>
+    <script src="libs/pdf.min.js"></script>
+    <script src='js/global/flipbook.js'></script>
+    <script src="js/global/main.js"></script>
 </body>
 
 </html>
